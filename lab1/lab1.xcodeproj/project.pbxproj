@@ -56,7 +56,7 @@
 		2B6ABD1F29CD7FE10092964C /* lab1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lab1UITests.m; sourceTree = "<group>"; };
 		2B6ABD2129CD7FE10092964C /* lab1UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lab1UITestsLaunchTests.m; sourceTree = "<group>"; };
 		2B6ABD2E29CD86610092964C /* View2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View2Controller.m; sourceTree = "<group>"; };
-		2B6ABD3029CD867B0092964C /* View2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View2Controller.h; sourceTree = "<group>"; };
+		2B797ADB29D6B3890074CB5D /* View2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View2Controller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				2B6ABD0A29CD7FE10092964C /* Info.plist */,
 				2B6ABD0B29CD7FE10092964C /* main.m */,
 				2B6ABD2E29CD86610092964C /* View2Controller.m */,
-				2B6ABD3029CD867B0092964C /* View2Controller.h */,
+				2B797ADB29D6B3890074CB5D /* View2Controller.h */,
 			);
 			path = lab1;
 			sourceTree = "<group>";

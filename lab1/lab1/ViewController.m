@@ -9,7 +9,7 @@
 #import "View2Controller.h"
 
 @interface ViewController ()
-
+@property(strong, nonatomic) UILabel *label;
 @end
 
 @implementation ViewController
@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Hello world
-    UILabel *label = [UILabel new];
-    label.text = @"Hello world";
-    label.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds) - 25, 100, 50);
+    self.label =  [UILabel new];;
+    self.label.text = @"Hello world";
+    self.label.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds) - 25, 100, 50);
     // button
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"按钮正常" forState: UIControlStateNormal];
@@ -28,15 +28,16 @@
     [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
     button.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds), 100, 50);
     [button addTarget:self action:@selector(func) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:label];
+    [self.view addSubview:self.label];
     [self.view addSubview:button];
 }
 
 - (void)func{
     // 创建view2
     View2Controller *vc2 = [[View2Controller alloc] init];
-    NSLog(@"跳转页面");
-    [self.navigationController presentModalViewController:vc2 animated:YES];
+    [self presentViewController:vc2 animated:YES completion:nil];
+    self.label.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds) + 200, 100, 50);
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)callback {

@@ -6,7 +6,8 @@
 //
 
 #import "View2Controller.h"
-
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @interface View2Controller ()
 
 @end
@@ -15,11 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     UILabel *label = [UILabel new];
-    label.text = @"Hello world...";
-    label.frame =  CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds), 100, 50);
+    label.text = @"Hello world! again";
+    label.frame =  CGRectMake(CGRectGetMidX(self.view.bounds) - 50, CGRectGetMidY(self.view.bounds), 120, 50);
     [self.view addSubview:label];
-    NSLog(@"加载");
     
 }
 
