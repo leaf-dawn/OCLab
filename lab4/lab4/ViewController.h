@@ -9,6 +9,7 @@
 
 @interface ViewController : UIViewController
 
-
+@public int public_int_variable;
+@protected double protected_double_variable;
 @end
 

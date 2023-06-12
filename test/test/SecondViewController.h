@@ -5,8 +5,11 @@
 //  Created by ByteDance on 2023/3/31.
 //
 
-#ifndef SecondViewController_h
-#define SecondViewController_h
+
+#import <UIKit/UIKit.h>
+
+@interface SecondViewController : UIViewController
 
 
-#endif /* SecondViewController_h */
+@end
+

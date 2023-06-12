@@ -5,8 +5,11 @@
 //  Created by ByteDance on 2023/3/30.
 //
 
-#ifndef ListObject_h
-#define ListObject_h
 
+@interface ListObject : NSObject
 
-#endif /* ListObject_h */
+@property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) NSString *message;
+
+- (instancetype) initWithURLAndMessage:(NSString*)url :(NSString*)message;
+@end
